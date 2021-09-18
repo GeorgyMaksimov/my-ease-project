@@ -18,34 +18,34 @@ public class secondprject {
             else {
                 switch (z) {
                     case (0):
-                        System.out.print(x + "Лет");
+                        System.out.print(x +" "+"Лет");
                         break;
                     case (1):
-                        System.out.print(x + "Год");
+                        System.out.print(x +" "+ "Год");
                         break;
                     case (2):
-                        System.out.print(x + "Года");
+                        System.out.print(x +" "+ "Года");
                         break;
                     case (3):
-                        System.out.print(x + "Года");
+                        System.out.print(x +" "+ "Года");
                         break;
                     case (4):
-                        System.out.print(x + "Года");
+                        System.out.print(x +" "+ "Года");
                         break;
                     case (5):
-                        System.out.print(x + "Лет");
+                        System.out.print(x +" "+ "Лет");
                         break;
                     case (6):
-                        System.out.print(x + "Лет");
+                        System.out.print(x +" "+ "Лет");
                         break;
                     case (7):
-                        System.out.print(x + "Лет");
+                        System.out.print(x +" "+ "Лет");
                         break;
                     case (8):
-                        System.out.print(x + "Лет");
+                        System.out.print(x +" "+ "Лет");
                         break;
                     case (9):
-                        System.out.print(x + "Лет");
+                        System.out.print(x +" "+ "Лет");
                         break;
 
                 }
