@@ -5,13 +5,12 @@ public class FirstProject {
 
 
     public static void main(String[] args) {
-        int i =0;
-        while (i <= 30) {
-            System.out.println("sdfsdf () ()" + i);
-            i= i+1;
+        for (int x =0;  x < 21; x=+1) {
+            System.out.println(x);
+            for (int x;x<21; x=+1) {
+                System.out.print(x);
+            }
+
         }
-
-        List<String> list  = new ArrayList<>();
-
     }
 }
