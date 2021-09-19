@@ -8,15 +8,7 @@ public class secondprject {
         int x = reader.nextInt();
         int y = 10;
         int z = x % y;
-        if (x > 99) {
-            System.out.print("Error");
-        }
-        else {
-            if (x < 1) {
-                System.out.print("Error");
-            }
-            else {
-                switch (z) {
+          switch (z) {
                     case (0):
                         System.out.print(x +" "+"Лет");
                         break;
@@ -52,5 +44,5 @@ public class secondprject {
             }
 
         }
-    }
-}
+
+
