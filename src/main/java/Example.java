@@ -4,7 +4,8 @@ public class Example {
     }
 
     static void sayHello(String firstName, String secondName) {
-        System.out.printf("Hello " + joinName(firstName, secondName));
+        String joinedNames = joinName(firstName, secondName);
+        System.out.printf("Hello " + joinedNames);
     }
 
     static String joinName(String firstName, String secondName) {
