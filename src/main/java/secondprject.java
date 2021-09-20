@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class secondprject {
 
     static Scanner reader = new Scanner(System.in);
-    public static int s (int z){
+    public static int s (int x){
         int x = reader.nextInt();
         int y = 10;
-        int z;
-        z=x%y;
-        return z
+        int z =x%y;
+        return z;
     }
 
     public static void main(String[] args) {
         int x = reader.nextInt();
+        return z;
         if (x > 99) {
             System.out.print("Error");
         }
