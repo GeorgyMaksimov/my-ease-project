@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SecondProject {
+public class SecondProjectTest {
 
 
     public static int getMod(int x, int y) {
