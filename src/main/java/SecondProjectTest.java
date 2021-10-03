@@ -21,28 +21,28 @@ public class SecondProjectTest {
         }
         int secondValue = 10;
         int age = getMod(firstValue, secondValue);
-        if (isTenner(firstValue)){
-            System.out.println(firstValue+" Лет");
-        }else{
-        switch (age) {
-            case (1):
-                System.out.print(firstValue + " " + "Год");
-                break;
-            case (2):
-            case (3):
-            case (4):
-                System.out.print(firstValue + " " + "Года");
-                break;
-            case (0):
-            case (5):
-            case (6):
-            case (7):
-            case (8):
-            case (9):
-                System.out.print(firstValue + " " + "Лет");
-                break;
+        if (isTenner(firstValue)) {
+            System.out.println(firstValue + " Лет");
+        } else {
+            switch (age) {
+                case (1):
+                    System.out.print(firstValue + " " + "Год");
+                    break;
+                case (2):
+                case (3):
+                case (4):
+                    System.out.print(firstValue + " " + "Года");
+                    break;
+                case (0):
+                case (5):
+                case (6):
+                case (7):
+                case (8):
+                case (9):
+                    System.out.print(firstValue + " " + "Лет");
+                    break;
 
-        }
+            }
         }
     }
 }
