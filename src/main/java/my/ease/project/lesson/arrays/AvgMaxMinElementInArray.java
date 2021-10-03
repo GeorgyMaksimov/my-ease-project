@@ -9,7 +9,7 @@ public class AvgMaxMinElementInArray {
      * <p>
      * Для генерации случайного числа используйте метод Math.random(), который возвращает значение в промежутке [0, 1].
      *
-     * @param args
+     * @param args main arg
      */
     public static void main(String[] args) {
 

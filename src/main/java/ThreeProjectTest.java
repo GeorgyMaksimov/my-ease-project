@@ -18,24 +18,24 @@ class ThreeProjectTest {//name class use  upper case style
             index = lowCaseMessage.indexOf(lowInputString, index);
             if (index >= 0) {
                 int spaceEnd = lowCaseMessage.indexOf(" ", index);
-                int spaceFirst = lowCaseMessage.lastIndexOf(" ",index);
+                int spaceFirst = lowCaseMessage.lastIndexOf(" ", index);
                 int firstWord;
                 int lastWord;
                 if (spaceFirst >= 0) {
-                    firstWord=spaceFirst;
+                    firstWord = spaceFirst;
                     //System.out.print(lowCaseMessage.substring(spaceFirst, index));
                 } else {
-                    firstWord=0;
+                    firstWord = 0;
                     //System.out.print(lowCaseMessage.substring(0, index));
                 }
                 if (spaceEnd >= 0) {
-                    lastWord=spaceEnd;
+                    lastWord = spaceEnd;
                     //System.out.println(lowCaseMessage.substring(index, spaceEnd));
                 } else {
-                    lastWord=lowCaseMessage.length()-1;
-                   //System.out.println(lowCaseMessage.substring(index,lowCaseMessage.length()-1));
+                    lastWord = lowCaseMessage.length() - 1;
+                    //System.out.println(lowCaseMessage.substring(index,lowCaseMessage.length()-1));
                 }
-                System.out.println(lowCaseMessage.substring(firstWord,lastWord));
+                System.out.println(lowCaseMessage.substring(firstWord, lastWord));
                 count++;
                 index += lowInputString.length();
             }
