@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class SecondProjectTest {
 
+    public static boolean isTenner(int x) {
+        return x >= 10 && x <= 19;
+    }
 
     public static int getMod(int x, int y) {
         return x % y;
@@ -10,49 +13,36 @@ public class SecondProjectTest {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         int firstValue = reader.nextInt();
-        int secondValue = reader.nextInt();
-       int z =  getMod(firstValue, secondValue);
         if (firstValue > 99) {
-            System.out.print("Error");
-        } else {
-            if (firstValue < 1) {
-                System.out.print("Error");
-            } else {
-                switch (z) {
-                    case (0):
-                        System.out.print(firstValue + " " + "Лет");
-                        break;
-                    case (1):
-                        System.out.print(firstValue + " " + "Год");
-                        break;
-                    case (2):
-                        System.out.print(firstValue + " " + "Года");
-                        break;
-                    case (3):
-                        System.out.print(firstValue + " " + "Года");
-                        break;
-                    case (4):
-                        System.out.print(firstValue + " " + "Года");
-                        break;
-                    case (5):
-                        System.out.print(firstValue + " " + "Лет");
-                        break;
-                    case (6):
-                        System.out.print(firstValue + " " + "Лет");
-                        break;
-                    case (7):
-                        System.out.print(firstValue + " " + "Лет");
-                        break;
-                    case (8):
-                        System.out.print(firstValue + " " + "Лет");
-                        break;
-                    case (9):
-                        System.out.print(firstValue + " " + "Лет");
-                        break;
+            throw new RuntimeException("Great ago " + firstValue);
+        }
+        if (firstValue < 1) {
+            throw new RuntimeException("Small ago " + firstValue);
+        }
+        int secondValue = 10;
+        int age = getMod(firstValue, secondValue);
+        if (isTenner(firstValue)){
+            System.out.println(firstValue+" Лет");
+        }else{
+        switch (age) {
+            case (1):
+                System.out.print(firstValue + " " + "Год");
+                break;
+            case (2):
+            case (3):
+            case (4):
+                System.out.print(firstValue + " " + "Года");
+                break;
+            case (0):
+            case (5):
+            case (6):
+            case (7):
+            case (8):
+            case (9):
+                System.out.print(firstValue + " " + "Лет");
+                break;
 
-                }
-            }
-
+        }
         }
     }
 }
