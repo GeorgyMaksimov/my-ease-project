@@ -7,11 +7,8 @@ public class SecondProjectTest {
         return x % y;
     }
 
-    //Где вызов твоего метода s? Вообще, из за того что ты назвал метод s непонятно что это метод, методы принято называть глаголом
-    //типа getReminder
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        //ты считывание вызываешь в двух местах, зачем? Задание было передать в функцию значение
         int firstValue = reader.nextInt();
         int secondValue = reader.nextInt();
        int z =  getMod(firstValue, secondValue);
