@@ -1,5 +1,7 @@
 package my.ease.project.lesson.arrays;
 
+import java.util.Scanner;
+
 /**
  * @author Maksimov
  */
@@ -12,6 +14,13 @@ public class PrimeNumbers {
      *
      */
     public static void main(String[] args) {
-
+        int y = 0;
+        for (int x=0;x<100;x=x+1){
+            y++;
+            int i= y%y;
+            if (i!=0){
+                System.out.print(""+y);
+            }
+        }
     }
 }
