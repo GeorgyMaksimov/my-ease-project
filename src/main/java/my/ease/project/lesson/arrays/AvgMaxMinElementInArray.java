@@ -37,7 +37,7 @@ public class AvgMaxMinElementInArray {
         System.out.println("min "+min+" max "+max+ " avg "+avg);
     }
 
-        private static void fill (int[] array){
+        protected static void fill (int[] array){
             for (int index = 0; index < array.length; index++) {
                 int newElement = (int) Math.round (100 * Math.random());
                 System.out.print(newElement+" ");
