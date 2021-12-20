@@ -1,12 +1,9 @@
 package my.ease.project.lesson.arrays;
 
-import myArray.lenght;
-
 /**
  * @author Maksimov
  */
 public class AvgMaxMinElementInArray {
-    private static Object lenght;
 
     /**
      * Заполните массив случайным числами и выведите максимальное, минимальное и среднее значение.
@@ -16,19 +13,36 @@ public class AvgMaxMinElementInArray {
      * @param args main arg
      */
     public static void main(String[] args) {
-        double array = Math.random(0, 1);
-        for (int i = 0; i < array.length; i++) {
-            int min = array[i];
-            int minId = i;
-            for (int j = i+1; j < array.lengtht; j++) {
-                if (array[j] < min) {
-                    min = array[j];
-                    minId = j;
-                }
+        int[] array = new int[100];
+        fill(array);
+        Integer min = null;
+        Integer max = null;
+        int sum = 0;
+        for (int element : array) {
+            if (min == null) {
+                min = element;
             }
-            int temp = array[i];
-            array[i] = min;
-            array[minId] = temp;
+            if (max == null) {
+                max = element;
+            }
+            if (element < min) {
+                min = element;
+            }
+            if (element > max) {
+                max = element;
+            }
+            sum = sum + element;
         }
+        int avg = sum / array.length;
+        System.out.println("min "+min+" max "+max+ " avg "+avg);
     }
+
+        private static void fill (int[] array){
+            for (int index = 0; index < array.length; index++) {
+                int newElement = (int) Math.round (100 * Math.random());
+                System.out.print(newElement+" ");
+                array[index] = newElement;
+            }
+            System.out.println();
+        }
     }
