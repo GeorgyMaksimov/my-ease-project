@@ -13,6 +13,7 @@ public class StatArray {
         int[] array = new int[100];
         ArrayHelper.fill(array);
         Map<Integer, Integer> itemToCountItem = new HashMap<>();
+
         for (int element : array) {
             if (itemToCountItem.containsKey(element)) {
                 int countItem = itemToCountItem.get(element);
