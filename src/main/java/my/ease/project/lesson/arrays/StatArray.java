@@ -6,11 +6,12 @@ import java.util.Map;
 public class StatArray {
     /**
      * Посчитать какое кол-во повторяющихся элементов в массиве
+     *
      * @param args Входные переменные
      */
     public static void main(String[] args) {
         int[] array = new int[100];
-        AvgMaxMinElementInArray.fill(array);
+        ArrayHelper.fill(array);
         Map<Integer, Integer> itemToCountItem = new HashMap<>();
         for (int element : array) {
             if (itemToCountItem.containsKey(element)) {

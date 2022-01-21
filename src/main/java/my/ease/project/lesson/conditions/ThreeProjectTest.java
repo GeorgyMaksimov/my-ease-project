@@ -1,3 +1,5 @@
+package my.ease.project.lesson.conditions;
+
 import java.util.Scanner;
 
 class ThreeProjectTest {
