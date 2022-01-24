@@ -1,3 +1,5 @@
+package my.ease.project.lesson.loops;
+
 public class FirstProject {
 
 

@@ -1,4 +1,4 @@
-package my.ease.project.lesson.arrays;
+package my.ease.project.lesson.loops;
 
 import java.util.*;
 

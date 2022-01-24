@@ -1,3 +1,5 @@
+package my.ease.project.lesson.strings;
+
 public class Example {
     public static void main(String[] args) {
         sayHello("Sergey", "Pinigin");

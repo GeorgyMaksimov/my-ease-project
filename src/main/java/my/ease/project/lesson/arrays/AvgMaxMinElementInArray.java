@@ -14,7 +14,7 @@ public class AvgMaxMinElementInArray {
      */
     public static void main(String[] args) {
         int[] array = new int[100];
-        fill(array);
+        ArrayHelper.fill(array);
         Integer min = null;
         Integer max = null;
         int sum = 0;
@@ -34,15 +34,6 @@ public class AvgMaxMinElementInArray {
             sum = sum + element;
         }
         int avg = sum / array.length;
-        System.out.println("min "+min+" max "+max+ " avg "+avg);
-    }
-
-    protected static void fill (int[] array){
-        for (int index = 0; index < array.length; index++) {
-            int newElement = (int) Math.round (100 * Math.random());
-            System.out.print(newElement+" ");
-            array[index] = newElement;
-        }
-        System.out.println();
+        System.out.println("min " + min + " max " + max + " avg " + avg);
     }
 }
