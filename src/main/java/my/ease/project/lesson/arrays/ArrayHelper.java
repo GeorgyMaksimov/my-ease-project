@@ -12,7 +12,10 @@ public class ArrayHelper {
     public static void fill(int[] array) {
         for (int index = 0; index < array.length; index++) {
             int newElement = (int) Math.round(100 * Math.random());
-            System.out.print(newElement + " ");
+            int remainderOfTheDivision=newElement%2;
+            if(remainderOfTheDivision == 0) {
+                System.out.print(newElement + " ");
+            }
             array[index] = newElement;
         }
         System.out.println();

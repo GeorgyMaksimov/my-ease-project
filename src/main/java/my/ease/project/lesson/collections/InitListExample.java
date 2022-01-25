@@ -1,5 +1,7 @@
 package my.ease.project.lesson.collections;
 
+import my.ease.project.lesson.arrays.ArrayHelper;
+
 /**
  * @author Maksimov
  */
@@ -12,6 +14,7 @@ public class InitListExample {
      * @param args main arg
      */
     public static void main(String[] args) {
-
+        int[] array=new int[50];
+        ArrayHelper.fill(array);
     }
 }
