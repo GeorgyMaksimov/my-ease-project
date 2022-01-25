@@ -18,8 +18,8 @@ public class NewArray {
         ArrayHelper.fill(array);
         for (int index = 0; index < array.length; index++) {
             var element = array[index];
-            int remainderOfTheDivision = element % 3;
-            if (remainderOfTheDivision == 0) {
+            int remainderOfTheDivision = index % 3;
+            if (index!=0&remainderOfTheDivision == 0) {
                 element = 0;
             }
             System.out.print(" " + element);
