@@ -19,10 +19,16 @@ public class InitListExample {
         for (int index = 0; index < 100; index++) {
             int newElement = (int) Math.round(100 * Math.random());
             list.add(newElement);
+            System.out.print(newElement+" ");
+        }
+        System.out.println();
+        for (int index=0;index<100; index++){
+            var element= list.get(index);
             int remainderOfTheDivision = index % 2;
             if (remainderOfTheDivision == 0){
-                System.out.print(" "+newElement);
+                System.out.print(" "+element);
             }
         }
+
     }
 }
