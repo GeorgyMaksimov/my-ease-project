@@ -15,12 +15,12 @@ public class InitListExample {
      * @param args main arg
      */
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>(int 10);
-        for (int index = 0; index < 10; index++) {
+        ArrayList<Integer> list = new ArrayList<Integer>(100);
+        for (int index = 0; index < 100; index++) {
             int newElement = (int) Math.round(100 * Math.random());
             list.add(newElement);
             int remainderOfTheDivision = index % 2;
-            if (remainderOfTheDivision = 0){
+            if (remainderOfTheDivision == 0){
                 System.out.print(" "+newElement);
             }
         }
