@@ -1,6 +1,7 @@
 package my.ease.project.lesson.collections;
 
-import my.ease.project.lesson.arrays.ArrayHelper;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Maksimov
@@ -14,7 +15,14 @@ public class InitListExample {
      * @param args main arg
      */
     public static void main(String[] args) {
-        int[] array = new int[50];
-        ArrayHelper.fill(array);
+        ArrayList<Integer> list = new ArrayList<Integer>(int 10);
+        for (int index = 0; index < 10; index++) {
+            int newElement = (int) Math.round(100 * Math.random());
+            list.add(newElement);
+            int remainderOfTheDivision = index % 2;
+            if (remainderOfTheDivision = 0){
+                System.out.print(" "+newElement);
+            }
+        }
     }
 }
